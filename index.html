@@ -2,71 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applemax Legal Portal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Lato:wght@400;700&family=Lexend:wght@500;600;700&display=swap" rel="stylesheet">
   
   <style>
-    /* Reset margins and center the square on the full screen */
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f4f4f4; /* Optional background color */
+      background-color: #f4f6f8;
+      font-family: "Lato", sans-serif;
+      padding: 20px;
     }
 
-    /* The centered blue square container */
-    .blue-square {
-      background-color: #007bff; /* Blue background */
-      color: white;              /* White text for contrast */
-      width: 400px;              /* Fixed width */
-      height: 400px;             /* Fixed height to make it a square */
-      padding: 24px;
-      box-sizing: border-box;    /* Includes padding inside width/height */
-      
-      /* Center items vertically and horizontally inside the square */
+    .card {
+      background-color: #007bff;
+      color: #ffffff;
+      width: 100%;
+      max-width: 440px;
+      padding: 40px 32px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      
-      border-radius: 8px;        /* Optional slight rounded corners */
+      text-align: center;
     }
 
     h1 {
-      font-size: 1.1rem;
-      margin-bottom: 16px;
       font-family: "Lexend", sans-serif;
-      font-optical-sizing: auto;
+      font-size: 1.25rem;
       font-weight: 600;
-      font-style: normal;
-      text-align: center;
+      line-height: 1.4;
+      margin-bottom: 24px;
     }
 
-    /* Link styling for dark background visibility */
-    a {
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-links a {
       font-family: "Lato", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-      text-align: center;
-      color: #ffffff;
-      margin: 0 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #007bff;
+      background-color: #ffffff;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
 
-  <!-- Wrapped content inside the blue square container -->
-  <div class="blue-square">
-    <h1>Terms of Service concerning ALL services affiliated to applemax.me, applemax, or bkhr.</h1>
-    <p>
+  <main class="card">
+    <h1>Terms of Service & Privacy Notices for Applemax Services</h1>
+    <nav class="nav-links">
       <a href="terms.html">Terms of Service</a>
       <a href="privacy.html">Privacy Policy</a>
-    </p>
-  </div>
+    </nav>
+  </main>
 
 </body>
 </html>
